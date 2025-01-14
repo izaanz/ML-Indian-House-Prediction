@@ -154,3 +154,19 @@ Use predict_test.py to send test queries to your model:
   ```
 
   Modify this script to format your input data as per the model's expectations.
+
+## Contributions
+
+Contributions to improve the model, enhance feature sets, or optimize the deployment process are welcome. Please submit a pull request with a clear description of your changes.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Acknowledgements
+
+- Special thanks to Kaggle for providing the dataset.
+
+---
+
+This README provides a comprehensive guide to understanding, using, and deploying the Depression Prediction Model. For any issues or further information, feel free to open an issue in this repository.
