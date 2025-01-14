@@ -115,3 +115,42 @@ The following performance metrics were achieved by the trained models:
    python predict_test.py
    ```
    This will return a predicted house priced based on the stored data in the file.
+
+
+### Interacting with the Model
+
+When testing the model, you can use the following JSON structure for a student's data:
+
+
+```json
+{
+'State': 'telangana',
+ 'City': 'warangal',
+ 'Property_Type': 0.0,
+ 'BHK': 1,
+ 'Size_in_SqFt': 2059,
+ 'Price_per_SqFt': 0.24,
+ 'Year_Built': 1995,
+ 'Furnished_Status': 2.0,
+ 'Floor_No': 0,
+ 'Total_Floors': 26,
+ 'Age_of_Property': 30,
+ 'Nearby_Schools': 7,
+ 'Nearby_Hospitals': 6,
+ 'Public_Transport_Accessibility': 0.0,
+ 'Parking_Space': 'no',
+ 'Security': 0.0,
+ 'Amenities': 'garden, pool, gym, playground, clubhouse',
+ 'Facing': 2.0,
+ 'Owner_Type': 'broker',
+ 'Availability_Status': 'under_construction'
+}
+```
+Use predict_test.py to send test queries to your model:
+
+- Use `predict_test.py` to send test queries to your model:
+  ```bash
+  python predict_test.py
+  ```
+
+  Modify this script to format your input data as per the model's expectations.
