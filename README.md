@@ -76,3 +76,42 @@ The following performance metrics were achieved by the trained models:
 ### Radar Chart Models Comparison
 ![Model's Result Using Radar](https://github.com/izaanz/ML-Indian-House-Prediction/blob/main/img/model_comparison_radar_chart.png)
 
+## How to Use the Model
+
+### Prerequisites
+
+- **Pipenv:** For managing Python environments and dependencies.
+- **Docker:** For containerized deployment of the model.
+- **Flask:** For app/webservice.
+
+### Running Locally
+
+1. **Clone the Repository:**
+   ```bash
+   git clone https://github.com/izaanz/ml-zoomcamp-2024/tree/main/Mid%20Term
+   navigate to the cloned directory
+   ```
+
+2. **Setup Environment:**
+   ```bash
+   pipenv install
+   pipenv shell
+   ```
+
+3. **Run the Model:**
+   
+   Note: You may have to run `python train.py` if the model_.bin doesn't validate on your end.
+   
+   ```bash
+   python predict.py
+   ```
+   This will start a local server where you can send requests to get predictions.
+
+4. **Testing Predictions:**
+
+   You can use predict_test.py to test the predictions.
+   
+   ```bash
+   python predict_test.py
+   ```
+   This will return a predicted house priced based on the stored data in the file.
