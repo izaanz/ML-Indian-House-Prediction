@@ -116,6 +116,24 @@ The following performance metrics were achieved by the trained models:
    ```
    This will return a predicted house priced based on the stored data in the file.
 
+### Docker Deployment
+
+To deploy using Docker:
+
+1. **Build the Docker Image:**
+   ```bash
+   docker build -t house-price-predictor .
+   ```
+
+2. **Run the Docker Container:**
+   ```bash
+   docker run -p 9696:9696 house-price-predictor
+   ```
+
+   The model will be accessible at `http://localhost:9696/predict`.
+
+This Dockerfile sets up a Python 3.11 environment, installs Pipenv, and copies the required files into the container. It then exposes port 9696 and sets up the Waitress server to serve the model.
+
 
 ### Interacting with the Model
 
