@@ -56,3 +56,10 @@ The following performance metrics were achieved by the trained models:
 | Random Forest | 50.60 | 3910.55 | 62.53 | 0.807 |
 | XGBoost | 6.96 | 78.74 | 8.87 | 0.996 |
 
+### Bar Plot Comparison of Models
+
+![Model's Result Using Bar Plot](https://github.com/izaanz/ML-Indian-House-Prediction/blob/main/img/model_comparison_bar_chart.png)
+
+### Radar Chart Models Comparison
+![Model's Result Using Radar](https://github.com/izaanz/ML-Indian-House-Prediction/blob/main/img/model_comparison_radar_chart.png)
+
