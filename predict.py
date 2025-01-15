@@ -1,6 +1,6 @@
 import pickle
 import logging
-from flask import Flask, request, jsonify, send_from_directory
+from flask import Flask, request, jsonify, render_template
 import os
 from flask_cors import CORS  # Import CORS
 from waitress import serve
@@ -18,11 +18,6 @@ app = Flask('House Price')
 # Enable CORS for all routes
 CORS(app)
 
-@app.route('/')
-def index():
-    # Serve the index.html from the static folder
-    return send_from_directory(os.path.join(app.root_path, 'static'), 'index.html')
-
 @app.route('/predict', methods=['POST'])
 def predict():
     data = request.get_json()
@@ -33,6 +28,11 @@ def predict():
         'price': int(y_pred)
     }
     return jsonify(result)
+
+@app.route("/")
+def form():
+    return render_template("index.html")
+
 
 if __name__ == "__main__":
     serve(app, host='0.0.0.0', port=9696)
