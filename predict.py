@@ -1,6 +1,7 @@
 import pickle
 import logging
-from flask import Flask, request, jsonify, render_template
+from flask import Flask, request, jsonify, send_from_directory
+import os
 from flask_cors import CORS  # Import CORS
 from waitress import serve
 
@@ -19,7 +20,8 @@ CORS(app)
 
 @app.route('/')
 def index():
-    return render_template('index.html')  # The HTML file
+    # Serve the index.html from the static folder
+    return send_from_directory(os.path.join(app.root_path, 'static'), 'index.html')
 
 @app.route('/predict', methods=['POST'])
 def predict():
