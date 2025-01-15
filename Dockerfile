@@ -9,6 +9,8 @@ RUN pipenv install --system --deploy
 
 COPY ["predict.py", "model.bin", "./"]
 
+COPY templates/ templates/
+
 EXPOSE 9696
 
 ENTRYPOINT ["waitress-serve", "--port=9696", "predict:app"]
