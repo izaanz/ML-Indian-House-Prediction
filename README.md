@@ -88,7 +88,7 @@ The following performance metrics were achieved by the trained models:
 
 1. **Clone the Repository:**
    ```bash
-   git clone https://github.com/izaanz/ml-zoomcamp-2024/tree/main/Mid%20Term
+   git clone https://github.com/izaanz/ML-Indian-House-Prediction
    navigate to the cloned directory
    ```
 
