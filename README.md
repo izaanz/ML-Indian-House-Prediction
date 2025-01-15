@@ -173,6 +173,18 @@ Use predict_test.py to send test queries to your model:
 
   Modify this script to format your input data as per the model's expectations.
 
+## Deployed on Cloud
+
+This is a machine learning-based web application for predicting house prices in India. The app is powered by a regression model that takes various house attributes (such as location, size, number of rooms, etc.) to predict the price of a house.
+
+The app is deployed on the cloud and can be accessed through the following link:
+
+https://ml-indian-house-prediction.onrender.com/
+
+![Cloud Deployment](https://github.com/izaanz/ML-Indian-House-Prediction/blob/main/img/frontend.png)
+
+You can input house details into the app, and it will generate a predicted price based on the trained model.
+
 ## Contributions
 
 Contributions to improve the model, enhance feature sets, or optimize the deployment process are welcome. Please submit a pull request with a clear description of your changes.
